@@ -1,2 +1,2 @@
-# angular_socialnetwork
+# react_socialnetwork
 social network
