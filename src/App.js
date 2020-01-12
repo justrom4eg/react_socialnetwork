@@ -1,9 +1,9 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Header from './comppnents/Header'
-import Navbar from './comppnents/Navbar'
-import Profile from './comppnents/Profile'
+import Header from './comppnents/Header/Header'
+import Navbar from './comppnents/Navbar/Navbar'
+import Profile from './comppnents/Profile/Profile'
 
 const App = () => {
   return (
