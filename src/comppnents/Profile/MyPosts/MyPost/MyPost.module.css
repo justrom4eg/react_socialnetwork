@@ -1,0 +1,9 @@
+.item{
+  color: seagreen;
+}
+
+.item img {
+  width: 200px;
+  border: 5px solid rgba(136, 86, 86, 0.8);
+  border-radius: 100px;
+}

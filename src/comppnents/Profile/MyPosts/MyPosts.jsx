@@ -1,5 +1,6 @@
 import React from 'react';
 import classes from './MyPosts.module.css'
+import MyPost from './MyPost/MyPost';
 
 const MyPosts = () => {
     return (
@@ -13,26 +14,8 @@ const MyPosts = () => {
           <button>Remove post</button>
         </div>
         <div>
-          My posts
-          <div className={classes.item}>
-            <img src="https://lastfm.freetls.fastly.net/i/u/770x0/140ab88fbc27abfda6001d33718a52db.jpg"/>
-            <p>Post 1</p>
-          </div>
-          <div className={classes.item}>
-            Post 2
-          </div>
-          <div className={classes.item}>
-            Post 3
-          </div>
-          <div className={classes.item}>
-            Post 4
-          </div>
-          <div className={classes.item}>
-            Post 5
-          </div>
-          <div className={classes.item}>
-            Post 6
-          </div>
+          <MyPost message="My second message" like="23"/>
+          <MyPost message="My first message" like="37"/>
         </div>
       </div>
     )
