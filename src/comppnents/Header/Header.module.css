@@ -1,8 +1,18 @@
 .header {
     grid-area: h;
-    background-color: red;
+    background-image: radial-gradient(mediumblue, darkblue);
+    height: 60px;
+    display: grid;
+    grid-template-columns: 2fr 10fr;
   }
   
-  .header img{
-    width: 20px;
+.header img{
+    width: 70px;
   }
+
+.itplanet {
+    color: white;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 500;
+}

@@ -1,5 +1,6 @@
 import React from "react";
 import classes from "./Messages.module.css"
+import {NavLink} from "react-router-dom";
 
 const Messages = () => {
     return (
@@ -7,16 +8,16 @@ const Messages = () => {
 
             <div className={classes.dialogs_item}>
                 <div className={classes.dialog}>
-                    Dima
+                    <NavLink to="/messages/1">Dimon</NavLink>
                 </div>
                 <div className={classes.dialog}>
-                    Nazar
+                    <NavLink to="/messages/2">Nastya</NavLink>
                 </div>
                 <div className={classes.dialog}>
-                    Ira
+                    <NavLink to="/messages/3">Roma</NavLink>
                 </div>
                 <div className={classes.dialog}>
-                    Romu4
+                    <NavLink to="/messages/4">Vetal</NavLink>
                 </div>
             </div>
 
