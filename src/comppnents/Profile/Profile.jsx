@@ -1,19 +1,14 @@
 import React from 'react';
 import classes from './Profile.module.css'
 import MyPosts from './MyPosts/MyPosts';
+import Avatar_Descriptions from "./Avatar_Descriptions/Avatar_Descriptions";
 
 const Profile = () => {
     return (
         <div className={classes.profile}>
-        <div className={classes.header_picture}>
-
+            <Avatar_Descriptions/>
+            <MyPosts/>
         </div>
-        <div>
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1rIHEq4QPVPjFKZHCIyM4fGLOZH6x-0jF80NPPjlKHPQPoXdYMA&s"/>
-          Descriptions
-        </div>
-        <MyPosts />
-      </div>
     )
 }
 

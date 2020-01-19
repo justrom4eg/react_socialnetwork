@@ -11,21 +11,21 @@ import Messages from "./comppnents/Messages/Messages";
 import {BrowserRouter, Route} from "react-router-dom";
 
 const App = () => {
-  return (
-      <BrowserRouter>
-          <div className="app_wrapper">
-              <Header />
-              <Navbar />
-              <div className="app_wrapper_content">
-                  <Route path="/messages" component={Messages}/>
-                  <Route path="/profile" component={Profile}/>
-                  <Route path="/news" component={News}/>
-                  <Route path="/music" component={Music}/>
-                  <Route path="/settings" component={Settings}/>
-              </div>
-          </div>
-      </BrowserRouter>
-  );
+    return (
+        <BrowserRouter>
+            <div className="app_wrapper">
+                <Header/>
+                <Navbar/>
+                <div className="app_wrapper_content">
+                    <Route path="/messages" component={Messages}/>
+                    <Route path="/profile" component={Profile}/>
+                    <Route path="/news" component={News}/>
+                    <Route path="/music" component={Music}/>
+                    <Route path="/settings" component={Settings}/>
+                </div>
+            </div>
+        </BrowserRouter>
+    );
 }
 
 export default App;
