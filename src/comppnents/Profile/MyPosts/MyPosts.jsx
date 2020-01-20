@@ -4,10 +4,12 @@ import MyPost from './MyPost/MyPost';
 
 const MyPosts = () => {
 
-    let postsData = [
+    let posts = [
         {id: "1", message: "How are you", like:"23"},
         {id: "2", message: "My first message", like:"47"}
     ];
+
+    let postElements = posts.map(post => <MyPost message={post.message} like={post.like}/>)
 
     return (
         <div className={classes.postBlock}>
@@ -20,8 +22,7 @@ const MyPosts = () => {
                 <button>Remove post</button>
             </div>
             <div>
-                <MyPost message={postsData[0].message} like={postsData[0].like}/>
-                <MyPost message={postsData[1].message} like={postsData[1].like}/>
+                {postElements}
             </div>
         </div>
     )
