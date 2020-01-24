@@ -2,14 +2,9 @@ import React from 'react';
 import classes from './MyPosts.module.css'
 import MyPost from './MyPost/MyPost';
 
-const MyPosts = () => {
+const MyPosts = (props) => {
 
-    let posts = [
-        {id: "1", message: "How are you", like:"23"},
-        {id: "2", message: "My first message", like:"47"}
-    ];
-
-    let postElements = posts.map(post => <MyPost message={post.message} like={post.like}/>)
+    let postElements = props.posts.map(post => <MyPost message={post.message} like={post.like}/>)
 
     return (
         <div className={classes.postBlock}>
@@ -27,5 +22,6 @@ const MyPosts = () => {
         </div>
     )
 }
+
 
 export default MyPosts
